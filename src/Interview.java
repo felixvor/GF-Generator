@@ -16,11 +16,11 @@ public class Interview {
 		this.single = getStatus();
 		
 		if (single == false){
-			System.out.println("Herzlichen Glückwunsch "+name+"! Du brauchst meine Hilfe nicht!");
+			System.out.println("Herzlichen GlÃ¼ckwunsch "+name+"! Du brauchst meine Hilfe nicht!");
 			wait(10);
 			return;
 		}
-		if (alter <= 14 || alter >=80){
+		if (alter <= 14 || alter >=88){
 			System.out.println("Das ist in deinem Alter nicht so schlimm. Machs gut! :)");
 			wait(10);
 			return;
@@ -32,13 +32,13 @@ public class Interview {
 			Scanner scanner = new Scanner(System.in);
 			System.out.print(" > ");
 			String gelaber = scanner.nextLine();
-			System.out.println("Erzähl mir bitte etwas genauer davon.");
+			System.out.println("ErzÃ¤hl mir bitte etwas genauer davon.");
 			System.out.print(" > ");
 			gelaber = scanner.nextLine();
 			System.out.println("Hast du in den letzten "+length+" Monaten versucht jemanden besser kennen zu lernen?");
 			System.out.print(" > ");
 			gelaber = scanner.nextLine();
-			System.out.println("Ich habe genug gehört, ich danke für dein Vertrauen!");
+			System.out.println("Ich habe genug gehÃ¶rt, ich danke fÃ¼r dein Vertrauen!");
 			wait(1);
 			System.out.print("\nWerte Antworten aus");
 			wait(1); System.out.print("."); wait(1); System.out.print("."); wait(2); System.out.print(".");
@@ -49,7 +49,7 @@ public class Interview {
 			System.out.print("\nErstelle psychologisches Gutachten");
 			wait(3); System.out.print("."); wait(3); System.out.print("."); wait(3); System.out.print(".");
 			wait(1);
-			System.out.print("\nPrüfe Ergebnisse");
+			System.out.print("\nPrÃ¼fe Ergebnisse");
 			wait(1); System.out.print("."); wait(1); System.out.print("."); wait(1); System.out.print(".");
 			wait(2);
 			System.out.print("\nFormatiere Endbericht");
@@ -103,7 +103,7 @@ public class Interview {
 		if(antwort.contains("Ja") || antwort.contains("ja") || antwort.contains("jo")){
 			status = false;
 			
-		}else if(antwort.contains("nein") ||  antwort.contains("Nein") || antwort.equals("ne") || antwort.contains("Nö")){
+		}else if(antwort.contains("nein") ||  antwort.contains("Nein") || antwort.equals("ne") || antwort.contains("NÃ¶")){
 			status = true;
 			
 		}else{
@@ -144,7 +144,7 @@ public class Interview {
 	}
 	
 	public void giveAdvice(){
-		System.out.println("\nFür dich und deine Situation konnte ein individueller Ratschlag konstruiert werden. Möchtest du ihn einsehen?");
+		System.out.println("\nFÃ¼r dich und deine Situation konnte ein individueller Ratschlag konstruiert werden. MÃ¶chtest du ihn einsehen?");
 		Scanner scanner = new Scanner(System.in);
 		System.out.print(" > ");
 		String antwort = scanner.nextLine();
@@ -153,19 +153,19 @@ public class Interview {
 				wait(1);
 				System.out.println("Sei einfach du selbst!");
 				wait(10);
-			}else if(antwort.contains("nein") ||  antwort.contains("Nein") || antwort.equals("ne") || antwort.contains("Nö")){
+			}else if(antwort.contains("nein") ||  antwort.contains("Nein") || antwort.equals("ne") || antwort.contains("NÃ¶")){
 				switch(c){
-				case 0: System.out.println("Das solltest du dir noch einmal überlegen ...");
+				case 0: System.out.println("Das solltest du dir noch einmal Ã¼berlegen ...");
 						c++;
 						giveAdvice();
 						break;
 				
-				case 1: System.out.println("Damit wäre unser gesamten Gespräch umsonst gewesen :(");
+				case 1: System.out.println("Damit wÃ¤re unser gesamten GesprÃ¤ch umsonst gewesen :(");
 						c++;
 						giveAdvice();
 						break;
 				
-				case 2: System.out.println("Dann eben nicht. Ich wünsche dir viel Glück auf deinem weiteren Lebensweg!");
+				case 2: System.out.println("Dann eben nicht. Ich wÃ¼nsche dir viel GlÃ¼ck auf deinem weiteren Lebensweg!");
 						wait(10);
 						return;
 					}	
